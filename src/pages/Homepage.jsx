@@ -5,6 +5,7 @@ import SearchBar from '../components/SearchBar';
 import RecipeSection from '../components/RecipeSection';
 import EditorsSection from '../components/EditorsSection';
 import Footer from '../components/Footer';
+import ConvertCard from '../components/ConvertCard';
 
 const Homepage = () => {
   const [query, setQuery] = useState('');
@@ -25,6 +26,7 @@ const Homepage = () => {
           <SearchBar query={query} setQuery={setQuery} onSearch={handleSearch} />
         </div>
       </div>
+      <ConvertCard/>
       <RecipeSection />
       <EditorsSection />
       <Footer />
