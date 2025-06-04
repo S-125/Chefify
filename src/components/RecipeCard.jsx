@@ -17,7 +17,7 @@ const RecipeCard = ({ recipe }) => {
     };
 
     return (
-        <div className="m-7 p-4 bg-white rounded-lg w-[280px] shadow-sm" onClick={handleCardClick}>
+        <div className="m-7 p-4  rounded-lg w-[280px] shadow-sm bg-white" onClick={handleCardClick}>
             <img
                 src={strMealThumb}
                 alt={strMeal}

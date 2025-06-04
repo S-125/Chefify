@@ -1,8 +1,11 @@
 import React from 'react';
 import emailjs from "@emailjs/browser";
 import { useState } from 'react';
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     const [email, setEmail] = useState("");
+    const categories = [ "Breakfast", "Side", "Starter", "Dessert", "Seafood", "Vegan"];
 
   const sendEmail = () => {
     emailjs.send(
@@ -32,29 +35,26 @@ const Footer = () => {
       <img src="/Footerlogo.png" alt="logo" srcSet="" className='mt-[90px] pt-1 pb-1' />
       </div>
       <div className=' w-[15vw]'>
-      <p className='text-[16px] text-white font-bold mt-6'>Learn More</p>
+      <p className='text-[16px] text-white font-bold mt-6'></p>
       <ul className='text-[#DEE1E6FF] text-[14px] flex flex-col gap-2 mt-3'>
-        <li>Our Cooks</li>
-        <li>See our features</li>
-        <li>FAQ</li>
+       
+      
       </ul>
-      <p className='text-[16px] text-white font-bold mt-6'>Shop</p>
+      <p className='text-[16px] text-white font-bold mt-6'></p>
       <ul className='text-[#DEE1E6FF] text-[14px] flex flex-col gap-2 mt-3'>
-        <li>Gift Subscription</li>
-        <li>Send Us Feedback</li>
+
         </ul>
        
       </div>
       <div>
       <p className='text-[16px] text-white font-bold mt-6 '>Recipes</p>
       <ul className='text-[#DEE1E6FF] text-[14px] flex flex-col gap-2 mt-3'>
-        <li>Cakes</li>
-        <li>Breakfast</li>
-        <li>Lunch</li>
-        <li>Dinner</li>
-        <li>Dessert</li>
-        <li>Healthy</li>
-        <li>Vegan</li>
+      {categories.map((category) => (
+        <li key={category}>
+          <Link to={`/recipes/${category}`} className="hover:text-white hover:text-[15px]">{category}</Link>
+        </li>
+      ))}
+
         </ul>
       </div>
     </div>

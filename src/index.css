@@ -6,3 +6,11 @@
 .font-poppins{
   font-family: 'Poppins', sans-serif;
 }
+.bg-recipe{
+  background:url('/bgrecipe.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.bg_home{
+  background:url('/bghome.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

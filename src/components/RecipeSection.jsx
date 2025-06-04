@@ -25,7 +25,7 @@ const RecipeSection = () => {
         searchRecipes();
       }
   return (
-    <div className='w-full h-auto bg-white'>
+    <div className='w-full h-auto '>
       <h1 className='flex justify-center text-[42px] pt-10 font-bold text-[#636AE8FF]'>THIS SUMMER RECIPES</h1>
       <div className="flex flex-wrap justify-center">
         

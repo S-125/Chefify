@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import LoadingBar from '../components/LoadingBar';
 
 const RecipeDetails = () => {
     const { id } = useParams();
@@ -18,7 +19,7 @@ const RecipeDetails = () => {
     }, [id]);
 
     if (isLoading) {
-        return <div className="text-center text-xl font-semibold text-gray-700">Loading...</div>;
+        return <LoadingBar/>;
     }
 
     if (!recipe) {
@@ -26,13 +27,13 @@ const RecipeDetails = () => {
     }
 
     return (
-        <div className="w-[100-vw] min-h-[100vh] bg-[#CED0F8FF]">
-        <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <div className="w-[100-vw] min-h-[100vh] bg-recipe">
+        <div className="max-w-3xl mx-auto p-6 bg-white/90 shadow-lg rounded-lg ">
             <h1 className="text-2xl font-bold text-gray-800 mb-4">{recipe.strMeal}</h1>
             <img 
                 src={recipe.strMealThumb} 
                 alt={recipe.strMeal} 
-                className="w-full rounded-lg shadow-md "
+                className="w-[300px] rounded-lg shadow-md "
             />
             <h2 className="text-lg font-semibold text-gray-700 mt-4">
                 Category: <span className="text-indigo-600">{recipe.strCategory}</span>
