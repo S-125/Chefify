@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/s-125/',
+  base: '/Chefify/',
   plugins: [react(),tailwindcss(),],
 })
