@@ -5,22 +5,22 @@ const EditorsSection = () => {
     {
       title: 'Stuffed sticky rice ball',
       description: 'Stuffed sticky rice balls: A delightful Asian treat with chewy, glutinous rice and a flavorful surprise filling...',
-      imageUrl: '/Image 29.png',
+      imageUrl: '/Chefify/image29.png',
     },
     {
       title: 'Strawberry Smoothie',
       description: 'Savor the refreshing delight of a strawberry smoothie. Made with ripe strawberries, this creamy blend offers...',
-      imageUrl: '/Image 30.png',
+      imageUrl: '/Chefify/image30.png',
     },
     {
       title: 'Latte Art',
       description: 'Latte art is the skillful craft of creating captivating designs on the surface of a latte...',
-      imageUrl: '/Image 31.png',
+      imageUrl: '/Chefify/image31.png',
     },
     {
       title: 'Butter fried noodles',
       description: 'Butter fried noodles: Savory noodles cooked in butter for a delicious and satisfying meal...',
-      imageUrl: '/Image 32.png',
+      imageUrl: '/Chefify/image32.png',
     },
   ];
 
